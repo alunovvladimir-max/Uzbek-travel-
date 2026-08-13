@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#071522">
+  <meta name="description" content="UZBEK.TRAVEL — Discover Uzbekistan along the Silk Road.">
+  <title>UZBEK.TRAVEL — The Heart of the Silk Road</title>
+  <style>
+    :root{--gold:#d8ad55;--gold2:#f0cf7a;--ink:#071522;--paper:#f4ead8}
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;background:var(--ink);color:#fff;font-family:Arial,Helvetica,sans-serif}
+    a{color:inherit;text-decoration:none}
+    .hero{
+      min-height:100svh;
+      position:relative;
+      overflow:hidden;
+      background:#071522 url("hero.webp") center top/cover no-repeat;
+    }
+    .shade{
+      position:absolute;inset:0;
+      background:linear-gradient(180deg,rgba(3,12,20,.22),rgba(3,12,20,.05) 45%,rgba(3,12,20,.72) 100%);
+      pointer-events:none;
+    }
+    .top{
+      position:relative;z-index:2;
+      display:flex;align-items:center;justify-content:space-between;
+      padding:20px clamp(18px,4vw,64px);
+      gap:18px;
+    }
+    .brand{font-family:Georgia,serif;font-size:clamp(20px,3vw,34px);letter-spacing:.03em}
+    .tag{display:block;font:11px/1.2 Arial,sans-serif;letter-spacing:.18em;color:var(--gold2);margin-top:4px}
+    nav{display:flex;gap:26px;font-size:12px;letter-spacing:.08em}
+    nav a{opacity:.9}
+    .plan{border:1px solid var(--gold2);padding:11px 16px;border-radius:5px;color:var(--gold2)}
+    .hero-actions{position:absolute;z-index:3;left:50%;top:48%;transform:translate(-50%,-50%);text-align:center}
+    .hero-actions a{
+      display:inline-block;background:linear-gradient(135deg,#e5bf6e,#b98935);
+      color:#17202a;padding:15px 25px;border-radius:7px;font-weight:700;letter-spacing:.06em;
+      box-shadow:0 10px 30px rgba(0,0,0,.25)
+    }
+    .hint{margin-top:10px;font-size:11px;letter-spacing:.15em;color:#fff9}
+    .content{background:var(--paper);color:#18222a;padding:55px 20px 70px}
+    .section{max-width:1120px;margin:auto}
+    .eyebrow{color:#a8792e;letter-spacing:.18em;font-size:12px;font-weight:700}
+    h2{font:clamp(32px,5vw,52px)/1.05 Georgia,serif;margin:8px 0 14px}
+    .lead{max-width:720px;color:#5a5b57;line-height:1.7}
+    .cards{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:28px}
+    .card{background:#fff;border:1px solid #dfd2bd;border-radius:14px;padding:22px;min-height:150px}
+    .card b{font:22px Georgia,serif}
+    .card p{color:#6d6b65;line-height:1.5}
+    footer{background:#071522;color:#cfc7b8;text-align:center;padding:25px;font-size:12px;letter-spacing:.08em}
+    @media(max-width:760px){
+      .hero{min-height:82svh;background-position:54% top}
+      .top{padding:15px 16px}
+      nav{display:none}
+      .brand{font-size:22px}
+      .tag{font-size:9px}
+      .plan{font-size:10px;padding:9px 11px}
+      .hero-actions{top:55%;width:100%}
+      .hero-actions a{padding:13px 19px;font-size:12px}
+      .content{padding:42px 16px 55px}
+      .cards{grid-template-columns:1fr 1fr}
+      .card{min-height:130px;padding:17px}
+      .card b{font-size:18px}
+    }
+    @media(max-width:430px){
+      .hero{min-height:78svh;background-position:56% top}
+      .cards{grid-template-columns:1fr}
+    }
+  </style>
+</head>
+<body>
+  <header class="hero" id="home">
+    <div class="shade"></div>
+    <div class="top">
+      <a class="brand" href="#home">UZBEK.TRAVEL<span class="tag">THE HEART OF THE SILK ROAD</span></a>
+      <nav>
+        <a href="#destinations">DESTINATIONS</a>
+        <a href="#tours">TOURS</a>
+        <a href="#experiences">EXPERIENCES</a>
+        <a href="#about">ABOUT US</a>
+      </nav>
+      <a class="plan" href="#tours">PLAN YOUR TRIP</a>
+    </div>
+    <div class="hero-actions">
+      <a href="#destinations">EXPLORE UZBEKISTAN&nbsp; →</a>
+      <div class="hint">ANCIENT HERITAGE • MODERN INNOVATION</div>
+    </div>
+  </header>
+
+  <main class="content">
+    <section class="section" id="destinations">
+      <div class="eyebrow">THE SILK ROAD JOURNEY</div>
+      <h2>One journey. Infinite stories.</h2>
+      <p class="lead">From Tashkent and the modern Nest One skyline to the ancient cities of Samarkand, Bukhara and Khiva — discover Uzbekistan through the route that connected civilizations.</p>
+      <div class="cards">
+        <article class="card"><b>Tashkent</b><p>Modern gateway to Uzbekistan.</p></article>
+        <article class="card"><b>Samarkand</b><p>The Pearl of the East.</p></article>
+        <article class="card"><b>Bukhara</b><p>A living city of Silk Road history.</p></article>
+        <article class="card"><b>Khiva</b><p>An open-air museum behind ancient walls.</p></article>
+      </div>
+    </section>
+
+    <section class="section" id="tours" style="margin-top:55px">
+      <div class="eyebrow">CURATED TOURS</div>
+      <h2>Choose your route.</h2>
+      <p class="lead">This is the first visual version. Next we can turn every city and tour into a real clickable page, add booking, Telegram and TON payments.</p>
+    </section>
+
+    <section class="section" id="experiences" style="margin-top:55px">
+      <div class="eyebrow">EXPERIENCES</div>
+      <h2>Culture, food, mountains & adventure.</h2>
+      <p class="lead">We will fill this section with real tours, hotels, guides, transfers and experiences as the project grows.</p>
+    </section>
+
+    <section class="section" id="about" style="margin-top:55px">
+      <div class="eyebrow">UZBEK.TRAVEL</div>
+      <h2>Where ancient heritage meets modern innovation.</h2>
+      <p class="lead">Built as a mobile-first travel portal and later prepared for TON Site, Telegram Mini App and TON Connect.</p>
+    </section>
+  </main>
+  <footer>UZBEK.TRAVEL • THE HEART OF THE SILK ROAD</footer>
+</body>
+</html>
